@@ -1,0 +1,35 @@
+.container {
+	display: block;
+	background-color: #8D44AD;
+	height: 100vh;
+	width: 100vw;
+	padding: 1rem;
+}
+.container > h1 {
+	text-align: center;
+}
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+.list > a {
+	padding: 2rem;
+	flex: 1 0 calc(25% - 4rem);
+	transition: .35s ease all;
+	box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.25);
+}
+.list > a:hover {
+	transform: scale(1.02);
+}
+.listItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.listItem > h2 {
+	width: 100%;
+	text-align: center;
+}

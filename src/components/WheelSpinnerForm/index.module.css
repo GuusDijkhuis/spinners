@@ -1,0 +1,71 @@
+.Form {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	padding: 1rem;
+	width: clamp(360px, 100%, 760px);
+}
+.Form > fieldset {
+	width: 100%;
+	margin-top: 1rem;
+	border-bottom: rgba(32, 38, 45, 0.2);
+}
+.ChoicesList {
+}
+.ChoicesList > li {
+	padding: .5rem 1rem;
+}
+.ChoiceHeader {
+	font-weight: 800;
+	background-color: rgba(32, 38, 45, 1);
+}
+.Choice {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: rgba(32, 38, 45, 0.25);
+}
+.Choice:nth-child(odd) {
+	background-color: rgba(32, 38, 45, 0.1);
+}
+.Choice > span {
+	width: 70%;
+	color: rgba(32, 38, 45, 1);
+}
+.Choice > button {
+	width: 30%;
+}
+.Input {
+	border-bottom: 2px solid rgb(32, 38, 45, 0.5);
+	padding: .75rem 1rem;
+	color: rgba(32, 38, 45, 1);
+	border-radius: 5px;
+}
+.InputField {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-top: 1rem;
+	gap: 1rem;
+}
+.InputField > label {
+	color: rgb(32, 38, 45);
+	font-size: 1.5rem;
+	font-weight: 800;
+	width: 30%;
+}
+.InputField > input {
+	width: 70%;
+}
+.InputField > button {
+	width: 30%;
+}
+
+.colorPicker {
+	appearance: inherit;
+	border: none;
+	height: 3rem;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0;
+}

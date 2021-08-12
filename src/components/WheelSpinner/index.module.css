@@ -1,0 +1,45 @@
+.container {
+	display: block;
+	background-color: #8D44AD;
+	height: 100vh;
+	max-width: 100vw;
+	padding: 1rem;
+}
+.container > h1 {
+	text-align: center;
+}
+.list {
+	display: flex;
+	flex-flow: column wrap;
+	height: 70vh;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+.list > li {
+	padding: 1rem;
+	flex: 0 0 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.spinButton {
+	background-color: tomato;
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-weight: 800;
+	position: absolute;
+	bottom: 1rem;
+	width: 10rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.border {
+	border: 3px solid white
+}
+
+@media only screen and (max-width: 720px) {
+	.list > li {
+		padding: 0.25rem;
+		flex: 0 0 1rem;
+	}
+}
