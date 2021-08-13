@@ -12,7 +12,6 @@ const Nav = () => {
 	return (
 		<div className={`${classes.menu} ${toggle ? classes.open : '' } `} >
 			<div className={classes.toggle} onClick={handleToggle}>
-				<img src="/hamburger.png" alt="menu button" />
 			</div>
 			<nav className={classes.nav}>
 				<ul>

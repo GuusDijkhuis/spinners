@@ -26,7 +26,12 @@ const WheelSpinner = () => {
 		let count = 5;
 		setDisableButton(true);
 		const interval = setInterval(() => {
+			let rand2 = randomNum(wheelSpinners.choices.length);
+			while(rand2 === choice) {
+				rand2 = randomNum(wheelSpinners.choices.length)
+			}
 			setChoice(randomNum(wheelSpinners.choices.length))
+			console.log(rand2);
 		}, 300)
 		const countDownTimer = setInterval(() => {
 			count = count - 1;
@@ -51,7 +56,7 @@ const WheelSpinner = () => {
 							className={classes.listItem} 
 							style={{
 								backgroundColor: getColor(i),
-								opacity: choice === i ? '1' : '0.5',
+								opacity: choice === i ? '1' : '0.7',
 								border: choice === i ? '3px solid rgba(255,255,255,1)': '3px solid rgba(255,255,255,0)'
 							}}
 							

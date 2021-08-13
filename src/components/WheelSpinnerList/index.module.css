@@ -1,7 +1,8 @@
 .container {
 	display: block;
 	background-color: #8D44AD;
-	height: 100vh;
+	height: 70vh;
+	overflow: scroll;
 	width: 100vw;
 	padding: 1rem;
 }
